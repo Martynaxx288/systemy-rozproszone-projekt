@@ -40,7 +40,8 @@ def get_system_logs():
             guid = provider.get('Guid')
             source_name = provider.get('EventSourceName')
             print(
-                f'Time: {time_created}, Level: {level} Event Id: {event_id}, Channel: {channel}, Process Id: {process_id}, Thread Id: {thread_id} Name: {name}, Guid: {guid}, Source name {source_name}')
+                f'Time: {time_created}, Level: {level} Event Id: {event_id}, Channel: {channel}, '
+                f'Process Id: {process_id}, Thread Id: {thread_id} Name: {name}, Guid: {guid}, Source name {source_name}')
 
             record = {
                 'level': level,
