@@ -102,4 +102,4 @@ if __name__ == "__main__":
     # Zapisanie logów do pliku CSV
     save_to_csv(logs, 'system_logs.csv')
 
-    print("Pobrano logi i zapisano do pliku system_logs.csv")  #
+    print("Pobrano logi i zapisano do pliku csv o nazwie system_logs.csv")
