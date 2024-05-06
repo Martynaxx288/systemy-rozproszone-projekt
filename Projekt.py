@@ -1,4 +1,4 @@
-import win32evtlog  # Biblioteka do interakcji z dziennikami zdarzeń systemowych Windows
+import win32evtlog  # Biblioteka do dziennika zdarzeń systemowych Windows
 import xml.etree.ElementTree as ET  # Biblioteka XML
 import csv  # Biblioteka do czytania i zapisywania plików CSV
 from openai import OpenAI  # Biblioteka do łączenia z API OpenAI
