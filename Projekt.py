@@ -9,9 +9,9 @@ def analyze_log_with_llm(log):
     completion = client.chat.completions.create(
         model="LM Studio Community/Meta-Llama-3-8B-Instruct-GGUF",  # Określenie modelu do użycia
         messages=[
-            {"role": "system", "content": "Podaj odpowiedź, która nie przekracza 20 znaków"},  # Komunikat systemowy
-            {"role": "user", "content": f"Oceń na skali od 1 do 10, gdzie 10 oznacza anomalię, czy log {log} jest anomalią. Twoja odpowiedź "  # Komunikat użytkownika
-                                        f"powinna być krótsza niż 20 znaków"}
+            {"role": "system", "content": "Give an answer that does not exceed 20 characters"},  # Komunikat systemowy
+            {"role": "user", "content": f"Rate on a scale of 1 to 10 whether log {log} is an anomaly. And give "  # Komunikat użytkownika
+                                        f"short explanation why."}
         ],
         temperature=0.1,  # Wrażliwosc czatu
     )
